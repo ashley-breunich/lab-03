@@ -65,4 +65,7 @@ In the files folder, you'll see 3 files: `1.txt, 2.txt, 3.txt`
 
 
 ##  Documentation
-In your README.md describe the exported values of each module you have defined. Every function description should include it's airty (expected number of parameters), the expected data for each paramiter (data-type and limitations), and it's behavior (for both valid and invalued use). Feel free to write any additional information in your README.md.
+
+The fs.readFile function accepts a concatenated string (file path) and a callback function. It will either return an error if the parameters are incorrect or it will read the file and output whatever content is present (string).
+
+The fs.writeFile function accepts a concatenated string (file path), direction on what to overwrite (in this case it's a variable that contains a string) and a callback function. It will either return an error if the parameters are incorrect or it will overwrite the file with the contents of the second parameter and then it will read the file and output whatever content is present (string).
