@@ -2,8 +2,8 @@
 
 jest.mock('fs');
 
-const reader = require('../../edit-file.js');
-// const reader = require('../../lib/reader.js');
+// const reader = require('../../edit-file.js');
+const reader = require('../../lib/reader-fixed.js');
 
 
 describe('File Reader Module', () => {
@@ -14,6 +14,7 @@ describe('File Reader Module', () => {
     // going to throw one in a test, have the expect execute your code as a
     // function so that you can trap it.
     reader(files, (err,data) => {
+      console.log(data);
       expect(err).toBeDefined();
       done();
     });
